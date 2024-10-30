@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grid y Footer Responsive</title>
+  <style>
+    /* Estilos para el grid */
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(200px, 1fr)); /* 3 columnas en pantallas grandes, 1 en pantallas pequeñas */
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .grid-item {
+      background-color: #f3f3f3;
+      padding: 20px;
+      text-align: center;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+    }
+
+    /* Estilos para el footer */
+    footer {
+      display: flex;
+      flex-wrap: wrap; /* Adaptabilidad para pantallas pequeñas */
+      padding: 20px;
+      background-color: #333;
+      color: white;
+      text-align: center;
+      gap: 20px;
+    }
+
+    .footer-column {
+      flex: 1 1 200px; /* Cada columna ocupará el ancho completo en pantallas pequeñas */
+    }
+
+    .footer-column h3 {
+      margin-bottom: 10px;
+      font-size: 1.2em;
+    }
+
+    .footer-column ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .footer-column ul li {
+      margin: 5px 0;
+    }
+
+    .footer-column ul li a {
+      color: #ddd;
+      text-decoration: none;
+    }
+
+    .footer-column ul li a:hover {
+      color: #fff;
+    }
+
+    /* Estilos responsivos adicionales */
+    @media (min-width: 768px) {
+      footer {
+        justify-content: space-between;
+        text-align: left;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Contenedor de Grid -->
+  <div class="grid-container">
+    <div class="grid-item">Elemento 1  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem eius ducimus est omnis praesentium ut, ex ab cupiditate exercitationem eum! Possimus praesentium nihil velit expedita atque odit aperiam fuga commodi?</div>
+    <div class="grid-item">Elemento 2  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem eius ducimus est omnis praesentium ut, ex ab cupiditate exercitationem eum! Possimus praesentium nihil velit expedita atque odit aperiam fuga commodi?</div>
+    <div class="grid-item">Elemento 3  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem eius ducimus est omnis praesentium ut, ex ab cupiditate exercitationem eum! Possimus praesentium nihil velit expedita atque odit aperiam fuga commodi?</div>
+    <div class="grid-item">Elemento 4  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem eius ducimus est omnis praesentium ut, ex ab cupiditate exercitationem eum! Possimus praesentium nihil velit expedita atque odit aperiam fuga commodi?</div>
+    <div class="grid-item">Elemento 5  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem eius ducimus est omnis praesentium ut, ex ab cupiditate exercitationem eum! Possimus praesentium nihil velit expedita atque odit aperiam fuga commodi?</div>
+    <div class="grid-item">Elemento 6  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rem eius ducimus est omnis praesentium ut, ex ab cupiditate exercitationem eum! Possimus praesentium nihil velit expedita atque odit aperiam fuga commodi?</div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <!-- Columna 1: Nombre de la empresa -->
+    <div class="footer-column">
+      <h3>Nombre de la Empresa</h3>
+      <p>Diseños artesanales a medida con amor</p>
+    </div>
+
+    <!-- Columna 2: Menú de navegación -->
+    <div class="footer-column">
+      <h3>Menú</h3>
+      <ul>
+        <li><a href="#contacto">Contáctanos</a></li>
+        <li><a href="#recursos">Recursos</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+      </ul>
+    </div>
+
+    <!-- Columna 3: Redes Sociales -->
+    <div class="footer-column">
+      <h3>Nuestras Redes</h3>
+      <ul>
+        <li><a href="#instagram">Instagram</a></li>
+        <li><a href="#facebook">Facebook</a></li>
+      </ul>
+    </div>
+  </footer>
+
+</body>
+</html>
